@@ -30,6 +30,10 @@ class SmartCalculator {
     }
 
     toString() {
+        return this.calculate();
+    }
+
+    calculate() {
         let tempResult;
         for (let i = 0, lenO = this.operands.length; i < lenO; ++i) {
             let operand = this.operands[i];
